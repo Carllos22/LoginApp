@@ -13,6 +13,7 @@
 		6CEA087D2C942BD400FDC207 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6CEA087C2C942BD400FDC207 /* Base */; };
 		6CEA087F2C942BD500FDC207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CEA087E2C942BD500FDC207 /* Assets.xcassets */; };
 		6CEA08822C942BD500FDC207 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6CEA08812C942BD500FDC207 /* Base */; };
+		6CEA088A2C94589000FDC207 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CEA08892C94589000FDC207 /* GoogleService-Info.plist */; };
 		D725C7D6952C052FC8503227 /* Pods_LoginApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC9BDC8110A1FD92C9DE8C /* Pods_LoginApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		6CEA087E2C942BD500FDC207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CEA08812C942BD500FDC207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CEA08832C942BD500FDC207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CEA08892C94589000FDC207 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A1BEBA0108E2F83172CE995 /* Pods-LoginApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginApp.debug.xcconfig"; path = "Target Support Files/Pods-LoginApp/Pods-LoginApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C4E7E020AE6BCA0400D61CCE /* Pods-LoginApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginApp.release.xcconfig"; path = "Target Support Files/Pods-LoginApp/Pods-LoginApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 				6CEA087E2C942BD500FDC207 /* Assets.xcassets */,
 				6CEA08802C942BD500FDC207 /* LaunchScreen.storyboard */,
 				6CEA08832C942BD500FDC207 /* Info.plist */,
+				6CEA08892C94589000FDC207 /* GoogleService-Info.plist */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				8A1BEBA0108E2F83172CE995 /* Pods-LoginApp.debug.xcconfig */,
 				C4E7E020AE6BCA0400D61CCE /* Pods-LoginApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +105,7 @@
 				6CEA086E2C942BD400FDC207 /* Sources */,
 				6CEA086F2C942BD400FDC207 /* Frameworks */,
 				6CEA08702C942BD400FDC207 /* Resources */,
+				3DA33EB5D229DDC1BCFF68EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CEA087F2C942BD500FDC207 /* Assets.xcassets in Resources */,
+				6CEA088A2C94589000FDC207 /* GoogleService-Info.plist in Resources */,
 				6CEA08822C942BD500FDC207 /* Base in Resources */,
 				6CEA087D2C942BD400FDC207 /* Base in Resources */,
 			);
@@ -160,6 +164,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3DA33EB5D229DDC1BCFF68EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginApp/Pods-LoginApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginApp/Pods-LoginApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginApp/Pods-LoginApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		84EAEE29F5F697BC67B24F64 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,7 +275,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -317,7 +338,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -357,7 +378,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.examhttps---github.com-Carllos22-Horoscope-iOS.gitple.LoginApp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Carllos22.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -386,7 +407,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.examhttps---github.com-Carllos22-Horoscope-iOS.gitple.LoginApp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Carllos22.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
