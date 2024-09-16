@@ -7,5 +7,6 @@ target 'LoginApp' do
 
   # Pods for LoginApp
   pod 'FirebaseAnalytics'
+  pod 'FirebaseAuth'
 
 end
